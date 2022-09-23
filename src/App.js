@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import './custom.css';
+import BurgerMenu from './BurgerMenu';
+import BloggerPhoto from './BloggerPhoto';
+import RightText from "./RightText";
+import LoopIcon from "./LoopIcon";
+import CloseIcon from "./CloseIcon";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <BurgerMenu/>
+      <LoopIcon/>
+        <CloseIcon/>
+        <BloggerPhoto picture = "https://istanbul-react.vercel.app/img/leftimage-dark.jpg" index = {<RightText about = {"More About Me"} port= {"PORTFOLIO"}/>}> </BloggerPhoto>
+
     </div>
   );
 }
