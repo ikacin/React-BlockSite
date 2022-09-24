@@ -5,7 +5,7 @@ import BurgerMenu from './BurgerMenu';
 import BloggerPhoto from './BloggerPhoto';
 import RightText from "./RightText";
 import LoopIcon from "./LoopIcon";
-import CloseIcon from "./CloseIcon";
+
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
 
       <BurgerMenu/>
       <LoopIcon/>
-        <CloseIcon/>
+
         <BloggerPhoto picture = "https://istanbul-react.vercel.app/img/leftimage-dark.jpg" index = {<RightText about = {"More About Me"} port= {"PORTFOLIO"}/>}> </BloggerPhoto>
 
     </div>

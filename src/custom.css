@@ -371,9 +371,6 @@ button.ripple.ripple-surface.btn.btn-link.btn-block.border-bottom.m-0 {
     position: fixed;
     right: 0;
     top: 200px;
-    background: #fff;
-    border: #ccc 1px solid;
-    box-shadow: #ccc 0 0 2px;
     border-right: 0;
     font-size: 18px;
     border-bottom-left-radius: 3px;
@@ -384,6 +381,16 @@ button.ripple.ripple-surface.btn.btn-link.btn-block.border-bottom.m-0 {
     height: 40px;
     align-items: center;
     justify-content: center;
+
+}
+.switcher {
+    position: fixed;
+    right: 0;
+    top: 200px;
+    z-index: 100;
+    width: 40px;
+    background: white;
+    height: 40px;
 }
 
 #switcher {
@@ -406,32 +413,47 @@ span#showSwitcher>svg{
     width: 20px!important;
 
 }
+svg#showSwitcher {
+    animation: fa-spin 2s infinite linear;
+}
 
 .openSwıtcher{
-    width: 220px!important;
-    height: 100px!important;
+    width: 280px!important;
+    height: 210px!important;
     background-color: white;
-    z-index:1;
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    top: 200px;
 
 }
-.closeSwıtcher{
-    display: none;
-}
+
 
 .switcher-close {
     z-index: 111111;
     margin-left: 0px;
     position: fixed;
-    right: 190px;
+    right: 252px;
     top: 199px;
 
 }
 
 
-.closeSelect{
-    display: none;
-}
-span#hideSwitcher {
-    height: 28px;
+.closeSwıtcher{
+display: block;
 }
 
+
+.closeNone{
+    display: none;
+}
+
+
+span#hideSwitcher {
+    position: fixed;
+    right: 256px;
+    top: 200px;
+    z-index: 999;
+    height: 28px;
+    display: none;
+}
