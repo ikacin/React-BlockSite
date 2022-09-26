@@ -1,10 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import './custom.css';
 import BurgerMenu from './BurgerMenu';
 import BloggerPhoto from './BloggerPhoto';
-import RightText from "./RightText";
-import LoopIcon from "./LoopIcon";
 import {useState} from "react";
 
 
@@ -22,7 +19,6 @@ function App() {
         setResim("https://istanbul-react.vercel.app/img/leftimage-light.jpg")
         setAbout(`blue border-blue`);
         setPort(`blue border-blue`);
-
         setTitle(`blue`);
 
 }
@@ -31,7 +27,6 @@ function App() {
         setResim("https://istanbul-react.vercel.app/img/videolight.jpg")
         setAbout(`blue border-blue`);
         setPort(`blue border-blue`);
-
         setTitle(`blue`);
 
     }
@@ -41,7 +36,6 @@ function App() {
         setAbout(`pink border-pink`);
         setPort(`pink border-pink`);
         setTitle(`pink`);
-
     }
 
 
@@ -57,8 +51,6 @@ function App() {
                   <img onClick={() => changePortfolio()} src={"https://istanbul-react.vercel.app/img/styleswitcher/red.png"}/>
                   <img onClick={() => changePortfolio2()} src={"https://istanbul-react.vercel.app/img/styleswitcher/green.png"}/>
                   <img onClick={() => changePortfolio3()} src={"https://istanbul-react.vercel.app/img/styleswitcher/magenta.png"}/>
-
-
               </div>
 
 

@@ -9,7 +9,6 @@ const RightText = (props) => {
             <div className={"call-to-actions-home"}>
                 <a className={`link-portfolio-one ${props.about}`} href={"#"}><Icons/>MORE ABOUT ME</a>
                 <a className={`portfolio-two ${props.port}`} href={"#"}><IconTwo/>PORTFOLIO</a>
-
             </div>
 
         </div>
