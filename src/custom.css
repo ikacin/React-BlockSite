@@ -18,7 +18,7 @@ body:after {
     right: 0;
     bottom: 0;
     top: 0;
-    z-index: 0;
+    z-index: -1;
 }
 
 .navbar{
@@ -63,7 +63,12 @@ body:after {
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
 }
-
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    opacity: 1;
+    animation-duration: 500ms;
+}
 .animated-icon1 span {
     background: #2d7ef7;
 }
@@ -415,6 +420,7 @@ span#showSwitcher>svg{
 }
 svg#showSwitcher {
     animation: fa-spin 2s infinite linear;
+    padding: 10px;
 }
 
 .openSwıtcher{
@@ -456,4 +462,26 @@ span#hideSwitcher {
     z-index: 999;
     height: 28px;
     display: none;
+}
+.drops-container {
+    position: fixed;
+    right: 76px;
+    top: 270px;
+    z-index: 999;
+    height: 80px;;
+
+
+
+}
+.style-swtch{
+    border-bottom: 1px solid #cccccc ;
+}
+
+
+.red{
+   color: #2196F3!important;
+}
+
+.blue{
+    color: #daa520!important;
 }
