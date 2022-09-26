@@ -5,7 +5,6 @@ import BloggerPhoto from './BloggerPhoto';
 import {useState} from "react";
 
 
-
 function App() {
     const [resim,setResim] = useState("https://istanbul-react.vercel.app/img/leftimage-dark.jpg");
     const [color,setColor] = useState();
@@ -20,19 +19,17 @@ function App() {
         setAbout(`blue border-blue`);
         setPort(`blue border-blue`);
         setTitle(`blue`);
-
-}
+    }
 
     const changePortfolio2 = () => {
-        setResim("https://istanbul-react.vercel.app/img/videolight.jpg")
+        setResim(" https://istanbul-react.vercel.app/img/videodark.jpg")
         setAbout(`green border-green`);
         setPort(`green border-green`);
         setTitle(`green`);
-
     }
 
     const changePortfolio3 = () => {
-        setResim("https://istanbul-react.vercel.app/img/videodark.jpg")
+        setResim("https://istanbul-react.vercel.app/img/videolight.jpg")
         setAbout(`pink border-pink`);
         setPort(`pink border-pink`);
         setTitle(`pink`);
@@ -44,7 +41,6 @@ function App() {
       <>
 
           <div className="App animated">
-
               <BurgerMenu/>
               <div className={"drops-container"}>
                   <h6 className={"style-swtch"}>STYLE SWITCHER</h6>
@@ -52,12 +48,7 @@ function App() {
                   <img onClick={() => changePortfolio2()} src={"https://istanbul-react.vercel.app/img/styleswitcher/green.png"}/>
                   <img onClick={() => changePortfolio3()} src={"https://istanbul-react.vercel.app/img/styleswitcher/magenta.png"}/>
               </div>
-
-
-
               <BloggerPhoto picture = {resim} textPath ={textPath} title = {title} indent = {indent}  about = {about} port = {port} />
-
-
           </div>
 
       </>

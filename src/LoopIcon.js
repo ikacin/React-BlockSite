@@ -31,11 +31,6 @@ export default function TwoToneIcons() {
 
     }
 
-
-
-
-
-
 return(
     <div className={`switcher`} >
         <div className={"swither-wheel"}>
@@ -50,9 +45,6 @@ return(
     </div>
 
     )
-
-
-
 }
 
 
