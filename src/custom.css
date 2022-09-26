@@ -494,3 +494,11 @@ span#hideSwitcher {
 .border-pink{
     border:1px solid  #ff00ff!important;
 }
+
+.green{
+    color: #72b626!important;
+}
+
+.border-green{
+    border: 1px solid #72b626!important;
+}

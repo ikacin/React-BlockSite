@@ -25,9 +25,9 @@ function App() {
 
     const changePortfolio2 = () => {
         setResim("https://istanbul-react.vercel.app/img/videolight.jpg")
-        setAbout(`blue border-blue`);
-        setPort(`blue border-blue`);
-        setTitle(`blue`);
+        setAbout(`green border-green`);
+        setPort(`green border-green`);
+        setTitle(`green`);
 
     }
 
