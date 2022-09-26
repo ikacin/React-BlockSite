@@ -297,16 +297,12 @@ a {
     position: relative;
     font-family: 'Poppins', sans-serif;
     letter-spacing: .5px;
-    background-color: #2196F3;
-    border: 1px solid #2196F3!important;
-
-
-
+    border: 1px solid #2196F3;
 }
-.a i {
-    padding-right: 11px;
+a.link-portfolio-one,a.portfolio-two{
+    display: flex;
+    align-items: center;
 }
-
 .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -480,8 +476,21 @@ span#hideSwitcher {
 
 .red{
    color: #2196F3!important;
+
 }
 
 .blue{
     color: #daa520!important;
+}
+
+.border-blue{
+    border:1px solid #daa520!important;
+}
+
+.pink{
+    color: #ff00ff!important;
+}
+
+.border-pink{
+    border:1px solid  #ff00ff!important;
 }

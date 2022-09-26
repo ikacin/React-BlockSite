@@ -12,24 +12,40 @@ import {useState} from "react";
 function App() {
     const [resim,setResim] = useState("https://istanbul-react.vercel.app/img/leftimage-dark.jpg");
     const [color,setColor] = useState();
-    const [about,setAbout] = useState();
-    const[port,setPort] = useState();
-    const[textPath,setTextPath] = useState(`red`);
+    const [about,setAbout] = useState(`red`);
+    const[port,setPort] = useState(`red`);
+    const[textPath,setTextPath] = useState();
     const[title,setTitle] = useState(`red`);
-    const[indent,setIndent] = useState(`red`);
+    const[indent,setIndent] = useState();
 
     const changePortfolio = () => {
-
         setResim("https://istanbul-react.vercel.app/img/leftimage-light.jpg")
-        setAbout("More Details");
-        setPort("More Click");
-        setTextPath(`blue`);
+        setAbout(`blue border-blue`);
+        setPort(`blue border-blue`);
+
         setTitle(`blue`);
-        setIndent(`blue`);
+
 }
 
+    const changePortfolio2 = () => {
+        setResim("https://istanbul-react.vercel.app/img/videolight.jpg")
+        setAbout(`blue border-blue`);
+        setPort(`blue border-blue`);
 
-  return (
+        setTitle(`blue`);
+
+    }
+
+    const changePortfolio3 = () => {
+        setResim("https://istanbul-react.vercel.app/img/videodark.jpg")
+        setAbout(`pink border-pink`);
+        setPort(`pink border-pink`);
+        setTitle(`pink`);
+
+    }
+
+
+    return (
 
       <>
 
@@ -39,6 +55,10 @@ function App() {
               <div className={"drops-container"}>
                   <h6 className={"style-swtch"}>STYLE SWITCHER</h6>
                   <img onClick={() => changePortfolio()} src={"https://istanbul-react.vercel.app/img/styleswitcher/red.png"}/>
+                  <img onClick={() => changePortfolio2()} src={"https://istanbul-react.vercel.app/img/styleswitcher/green.png"}/>
+                  <img onClick={() => changePortfolio3()} src={"https://istanbul-react.vercel.app/img/styleswitcher/magenta.png"}/>
+
+
               </div>
 
 
